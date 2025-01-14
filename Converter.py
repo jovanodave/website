@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Converter")
+st.title("Unit Converter")
 
 factor = {'mm' : 1, 'cm' : 0.1, 'm' : 0.001, 'km' : 0.000001}
 
