@@ -26,7 +26,7 @@ with pr:
 
 for i in range(len(df)):
     record = df.iloc[i]
-    st.image(f'{record['picture']}',width=250)
+    st.image(f'{record['Picture']}',width=250)
 
 st.dataframe(df)
 
