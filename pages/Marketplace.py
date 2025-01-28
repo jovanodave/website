@@ -25,7 +25,7 @@ with pr:
     selection_price = st.slider("Price Range", min_value = lowest_price, max_value = highest_price)
 
 for i in range(len(df)):
-    img_name = df.iloc[i]
+    record = df.iloc[i]
     st.image(f'{record['picture']}',width=250)
 
 st.dataframe(df)
