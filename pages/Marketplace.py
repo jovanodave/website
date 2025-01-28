@@ -24,6 +24,8 @@ with pr:
     highest_price = (df['Price'].max())
     selection_price = st.slider("Price Range", min_value = lowest_price, max_value = highest_price)
 
+st.image('./image/JBL_AUTHENTICS.jpeg')
+
 st.dataframe(df)
 
 #st.write(df.columns)
