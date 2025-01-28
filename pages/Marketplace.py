@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_excel("Source.xlsx")
+df = pd.read_excel("./pages/Source.xlsx")
 
 s,c,p,pr = st.columns(4)
 with s:
