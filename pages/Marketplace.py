@@ -32,6 +32,7 @@ for i in range(len(df)):
     record = df.iloc[i]
     with columns[i]:
         st.image(f'{record['Picture']}',width=250)
+        st.write(f'{record['name']})
 
 st.dataframe(df)
 
