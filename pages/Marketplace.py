@@ -30,7 +30,8 @@ columns = st.columns(num_of_columns) # create the column
 
 for i in range(len(df)):
     record = df.iloc[i]
-    st.image(f'{record['Picture']}',width=250)
+    with columns[i]:
+        st.image(f'{record['Picture']}',width=250)
 
 st.dataframe(df)
 
