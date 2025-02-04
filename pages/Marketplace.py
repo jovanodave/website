@@ -37,7 +37,7 @@ for i in range(len(df)):
             st.write(f'{record['Price']}')
             st.write(f'{record['Description']}')
 
-st.dataframe(df)
+# st.dataframe(df)
 
 #st.write(df.columns)
 #st.write(df['Category'].unique())
