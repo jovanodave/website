@@ -31,10 +31,11 @@ columns = st.columns(num_of_columns) # create the column
 for i in range(len(df)):
     record = df.iloc[i]
     with columns[i]:
-        st.image(f'{record['Picture']}',width=250)
-        st.write(f'{record['Product_Name']}')
-        st.write(f'{record['Price']}')
-        st.write(f'{record['Description']}')
+        with st.container(border=True):
+            st.image(f'{record['Picture']}',width=250)
+            st.write(f'{record['Product_Name']}')
+            st.write(f'{record['Price']}')
+            st.write(f'{record['Description']}')
 
 st.dataframe(df)
 
