@@ -24,6 +24,10 @@ with pr:
     highest_price = (df['Price'].max())
     selection_price = st.slider("Price Range", min_value = lowest_price, max_value = highest_price)
 
+num_of_columns = 4 # create variable to set the column
+columns = st.columns(num_of_columns) # create the column
+
+
 for i in range(len(df)):
     record = df.iloc[i]
     st.image(f'{record['Picture']}',width=250)
