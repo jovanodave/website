@@ -36,6 +36,10 @@ for i in range(len(df)):
             st.write(f'{record['Product_Name']}')
             st.write(f'{record['Price']}')
             st.write(f'{record['Description']}')
+            if st.button("Add to Cart"):
+                st.write("Added to Cart")
+            if st.button("Buy"):
+                st.write("Thank you")
 
 # st.dataframe(df)
 
