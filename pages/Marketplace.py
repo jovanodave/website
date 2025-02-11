@@ -41,6 +41,8 @@ elif num_of_rows > 2 and num_of_rows <=3:
     num_of_rows = 3
 elif num_of_rows > 1 and num_of_rows <=2:
     num_of_rows = 2
+elif num_of_rows > 0 and num_of_rows <=1:
+    num_of_rows = 1
 
 for i in range(len(df)):
     record = df.iloc[i]
