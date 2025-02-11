@@ -9,21 +9,21 @@ with s:
                                      option=df['Store'].unique(),
                                     default=df['Store'].unique())
 
-    df = df[df['Store'] == isin(selection_store)]
+    df = df[df['Store'].isin(selection_store)]
 
 with c:
     selection_category = st.multiselect("Select food category",
                                         option=df['Category'].unique(),
                                        default=df['Category'].unique())
 
-    df = df[df['Category'] == isin(selection_category)]
+    df = df[df['Category'].isin(selection_category)]
 
 with p:
     selection_product = st.multiselect("Select Product Name", 
                                        option=df['Product_Name'].unique(),
                                       default=df['Product_Name'].unique())
 
-    df = df[df['Product_Name'] == isin(selection_product)]
+    df = df[df['Product_Name'].isin(selection_product)]
 
 with pr:
     lowest_price = (df['Price'].min())
