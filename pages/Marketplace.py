@@ -6,21 +6,21 @@ df = pd.read_excel("./pages/Source.xlsx")
 s,c,p,pr = st.columns(4)
 with s:
     selection_store = st.multiselect("Select store", 
-                                     option=df['Store'].unique(),
+                                     options=df['Store'].unique(),
                                     default=df['Store'].unique())
 
     df = df[df['Store'].isin(selection_store)]
 
 with c:
     selection_category = st.multiselect("Select food category",
-                                        option=df['Category'].unique(),
+                                        options=df['Category'].unique(),
                                        default=df['Category'].unique())
 
     df = df[df['Category'].isin(selection_category)]
 
 with p:
     selection_product = st.multiselect("Select Product Name", 
-                                       option=df['Product_Name'].unique(),
+                                       options=df['Product_Name'].unique(),
                                       default=df['Product_Name'].unique())
 
     df = df[df['Product_Name'].isin(selection_product)]
