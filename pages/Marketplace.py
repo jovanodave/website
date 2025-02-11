@@ -5,19 +5,25 @@ df = pd.read_excel("./pages/Source.xlsx")
 
 s,c,p,pr = st.columns(4)
 with s:
-    selection_store = st.selectbox("Select store", df['Store'].unique())
+    selection_store = st.multiselect("Select store", df['Store'].unique())
 
     df = df[df['Store'] == selection_store]
 
 with c:
-    selection_category = st.selectbox("Select food category", df['Category'].unique())
+    selection_category = st.multiselect("Select food category",
+                                        option=df['Category'].unique()
+                                       default=df['Category'].unique())
 
     df = df[df['Category'] == selection_category]
 
 with p:
-    selection_product = st.selectbox("Select Product Name", df['Product_Name'].unique())
+    selection_product = st.multiselect("Select Product Name", 
+                                       option=df['Product_Name'].unique()
+                                      default=df['Product_Name'].unique())
 
-    df = df[df['Product_Name'] == selection_product]
+    df = df[df['Product_Name'] == isin(selection_product)]
+    df = df[df['Category'] == isin(selection_product)]
+    df = df[df['Store'] == isin(selection_product)]
 
 with pr:
     lowest_price = (df['Price'].min())
