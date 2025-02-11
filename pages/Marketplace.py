@@ -33,7 +33,7 @@ with pr:
 num_of_columns = 4 # create variable to set the column
 columns = st.columns(num_of_columns) # create the column
 data_length = len(df)
-num_of_rows = data_length / num_of_rows
+num_of_rows = data_length / num_of_columns
 
 if num_of_rows > 3:
     num_of_rows = 4
