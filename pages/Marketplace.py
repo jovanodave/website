@@ -47,7 +47,7 @@ num_of_rows = int(data_length / num_of_columns)
 for nr in range(num_of_rows):
     with st.container():
         columns = st.columns(num_of_columns)
-        for nc, c in range(len(df)):
+        for nc, c in enumerate(columns):
             with c:
                 with st.container(border=True):
                     record = df.iloc[nr * num_of_columns + nc]
