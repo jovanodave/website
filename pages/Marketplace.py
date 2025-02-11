@@ -55,10 +55,8 @@ for nr in range(num_of_rows):
                     st.write(f'{record['Product_Name']}')
                     st.write(f'{record['Price']}')
                     st.write(f'{record['Description']}')
-                    if st.button("Add to Cart"):
+                    if st.button("Add to Cart",key=f'{nr * num_of_columns + nc}'):
                         st.write("Added to Cart")
-                    if st.button("Buy"):
-                        st.write("Thank you")
 
 # st.dataframe(df)
 
