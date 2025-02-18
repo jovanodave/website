@@ -30,7 +30,7 @@ with pr:
     highest_price = (df['Price'].max())
     selection_price = st.slider("Price Range", min_value = lowest_price, max_value = highest_price)
 
-num_of_columns = 4 # create variable to set the column
+num_of_columns = 5 # create variable to set the column
 columns = st.columns(num_of_columns) # create the column
 data_length = len(df)
 #num_of_rows = int(data_length / num_of_columns)
@@ -44,6 +44,8 @@ for i in range(data_length):
         col = columns[2]
     if i%num_of_columns == 3:
         col = columns[3]
+    if i%num_of_columns == 4:
+        col = columns[4]
 
     with col:
         with st.container(border=True):
