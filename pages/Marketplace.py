@@ -52,7 +52,7 @@ for i in range(data_length):
             st.write(f'{record['Product_Name']}')
             st.write(f'{record['Price']}')
             st.write(f'{record['Description']}')
-            if st.button("Add to Cart",key=f'{nr * num_of_columns + nc}'):
+            if st.button("Add to Cart",key=f'{i}'):
                 st.write("Added to Cart")
             if st.button("Buy",key=f'buy{i}'):
                 st.write("Thank You :D")
