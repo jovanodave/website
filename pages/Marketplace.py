@@ -39,7 +39,7 @@ for i in range(data_length):
     if i%num_of_columns == 0:
         col = columns[0]
     if i%num_of_columns == 1:
-        col = columns[0]
+        col = columns[1]
     if i%num_of_columns == 2:
         col = columns[2]
     if i%num_of_columns == 3:
