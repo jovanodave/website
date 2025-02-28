@@ -23,7 +23,7 @@ conversion_factor = {
 with st.container(border=True):
     st.write("")
 
-    inputnum, baseunit, targetunit, result = st.columns(4)
+    inputnum, category, baseunit, targetunit, result = st.columns(5)
     with inputnum:
         input_value = st.number_input("Enter Number")
     with category:
