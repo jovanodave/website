@@ -49,8 +49,8 @@ with st.container(border=True):
     with result:
         st.write("Result")
 
-        base_factor = conversion_factor[base_unit]
-        target_factor = factor[target_unit]
+        base_factor = conversion_factor[input_category][base_unit]
+        target_factor = factor[input_category][target_unit]
 
         st.write(base_unit, base_factor)
         st.write(target_unit, target_factor)
