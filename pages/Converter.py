@@ -50,7 +50,7 @@ with st.container(border=True):
         st.write("Result")
 
         base_factor = conversion_factor[input_category][base_unit]
-        target_factor = factor[input_category][target_unit]
+        target_factor = conversion_factor[input_category][target_unit]
 
         st.write(base_unit, base_factor)
         st.write(target_unit, target_factor)
