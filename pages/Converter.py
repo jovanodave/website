@@ -25,7 +25,7 @@ conversion_factor = {
                         'mph' : 2.23694, 
                         'light-speed' : 2.998e+8,
                         'light-year' : 9.461e+15,
-                        'human-speed' : 5
+                        'human-speed' : 5,
                         'horse-speed' : 17,
                         'rabbit-speed' : 20,
                         'mice-speed' : 3.34,
