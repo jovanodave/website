@@ -21,17 +21,17 @@ conversion_factor = {
                         'ounce' : 0.00328084},
                     'speed' : {
                         'm/s' : 1,
-                        'kmph' : 3.6, 
-                        'mph' : 2.23694, 
-                        'light-speed' : 2.998e+8,
-                        'light-year' : 9.461e+15,
-                        'human-speed' : 5,
-                        'horse-speed' : 17,
-                        'rabbit-speed' : 20,
-                        'mice-speed' : 3.34,
-                        'cheetah-speed' : 29,
-                        'black marlin-speed' : 36.65,
-                        'sloth' : 0.037}}
+                        'kmph' : 1/3.6, 
+                        'mph' : 1/2.23694, 
+                        'light-speed' : 1/2.998e+8,
+                        'light-year' : 1/9.461e+15,
+                        'human-speed' : 1/5,
+                        'horse-speed' : 1/17,
+                        'rabbit-speed' : 1/20,
+                        'mice-speed' : 1/3.34,
+                        'cheetah-speed' : 1/29,
+                        'black marlin-speed' : 1/36.65,
+                        'sloth' : 1/0.037}}
 
 
 with st.container(border=True):
