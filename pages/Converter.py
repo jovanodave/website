@@ -18,7 +18,21 @@ conversion_factor = {
                         'mg' : 0.001, 
                         'ton' : 0.000001,
                         'pound' : 0.393701,
-                        'ounce' : 0.00328084}}
+                        'ounce' : 0.00328084},
+                    'speed' : {
+                        'm/s' : 1,
+                        'kmph' : 3.6, 
+                        'mph' : 2.23694, 
+                        'light-speed' : 2.998e+8,
+                        'light-year' : 9.461e+15,
+                        'human-speed' : 5
+                        'horse-speed' : 17,
+                        'rabbit-speed' : 20,
+                        'mice-speed' : 3.34,
+                        'cheetah-speed' : 29,
+                        'black marlin-speed' : 36.65,
+                        'sloth' : 0.037}}
+
 
 with st.container(border=True):
     st.write("")
