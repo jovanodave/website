@@ -32,8 +32,20 @@ conversion_factor = {
                         'mice-speed' : 1/3.34,
                         'cheetah-speed' : 1/29,
                         'black marlin-speed' : 1/36.65,
-                        'sloth' : 1/0.037}}
-
+                        'sloth' : 1/0.037},
+                    'food' : {
+                      'bakso' : 25000,
+                      'nasi_goreng' : 36000,
+                      'mie_ayam' : 22000,
+                      'es_cendol' : 15000,
+                      'lemper' : 7000,
+                      'lumpia' : 16000,
+                      'es_teh' : 5000,
+                      'es_jeruk' : 8000,
+                      'pizza_large' : 100000,
+                      'ramen' : 90000,
+                      'lobster' : 563000,
+                      'king_crab' : 984000}}
 
 with st.container(border=True):
     st.write("")
