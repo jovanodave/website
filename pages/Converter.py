@@ -1,7 +1,7 @@
 import streamlit as st
+st.set_page_config(layout='wide')
 
 st.title("Unit Converter")
-st.set_page_config(layout='wide')
 
 conversion_factor = {
                     'distance': {
