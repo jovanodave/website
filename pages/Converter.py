@@ -73,6 +73,7 @@ with category:
       
 with baseunit:
     base_unit = st.radio("Base Unit",options = conversion_factor[input_category].keys())
+    st.image(picture_link[base_unit])
       
 with targetunit:
     target_unit = st.radio("Target Unit",options = conversion_factor[input_category].keys())
