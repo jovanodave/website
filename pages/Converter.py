@@ -49,6 +49,7 @@ conversion_factor = {
 
 with st.container(border=True):
     st.write("")
+  
 picture_link = {'bakso':'./images/bakso.jpg',
                 'nasi_goreng':'./images/nasi_goreng.jpg',
                 'mie_ayam':'./images/mie_ayam.jpg',
@@ -62,22 +63,23 @@ picture_link = {'bakso':'./images/bakso.jpg',
                 'lobster':'./images/lobster.jpg',
                 'king_crab':'./images/king_crab.jpg'}
 
-    inputnum, category, baseunit, targetunit, result = st.columns(5)
-    with inputnum:
-        input_value = st.number_input("Enter Number")
+inputnum, category, baseunit, targetunit, result = st.columns(5)
+
+with inputnum:
+    input_value = st.number_input("Enter Number")
       
-    with category:
-      input_category = st.radio("Select Category",options = conversion_factor.keys())
+with category:
+    input_category = st.radio("Select Category",options = conversion_factor.keys())
       
-    with baseunit:
-        base_unit = st.radio("Base Unit",options = conversion_factor[input_category].keys())
+with baseunit:
+    base_unit = st.radio("Base Unit",options = conversion_factor[input_category].keys())
       
-    with targetunit:
-        target_unit = st.radio("Target Unit",options = conversion_factor[input_category].keys())
-        st.image(picture_link[base_unit])
+with targetunit:
+    target_unit = st.radio("Target Unit",options = conversion_factor[input_category].keys())
+    st.image(picture_link[base_unit])
       
-    with result:
-        st.write("Result")
+with result:
+    st.write("Result")
 
         base_factor = conversion_factor[input_category][base_unit]
         target_factor = conversion_factor[input_category][target_unit]
