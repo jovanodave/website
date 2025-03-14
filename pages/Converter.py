@@ -50,6 +50,17 @@ conversion_factor = {
 with st.container(border=True):
     st.write("")
 
+  picture_link = {'fries':'./images/fries.jpeg',
+                'donut':'./images/donut.jpeg',
+                'burger':'./images/burger.jpeg',
+                'ice cream':'./images/ice_cream.jpeg',
+                'apple':'./images/apple.jpeg',
+                'banana':'./images/banana.jpeg',
+                'cabbage':'./images/cabbage.jpeg',
+                'coke':'./images/coke.jpeg',
+                'milk':'./images/milk.jpeg',
+                'instant noodles':'./images/instant_noodles.jpeg'}
+
     inputnum, category, baseunit, targetunit, result = st.columns(5)
     with inputnum:
         input_value = st.number_input("Enter Number")
