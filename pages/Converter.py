@@ -49,8 +49,7 @@ conversion_factor = {
 
 with st.container(border=True):
     st.write("")
-
-  picture_link = {'bakso':'./images/bakso.jpg',
+picture_link = {'bakso':'./images/bakso.jpg',
                 'nasi_goreng':'./images/nasi_goreng.jpg',
                 'mie_ayam':'./images/mie_ayam.jpg',
                 'es_cendol':'./images/es_cendol.jpeg',
