@@ -61,7 +61,7 @@ with st.container(border=True):
                 'pizza_large':'./images/large_pizzza.jpg',
                 'ramen':'./images/ramen.jpg'}
                 'lobster':'./images/lobster.jpg',
-                'king_crab':'./images/king_crab.jpg',
+                'king_crab':'./images/king_crab.jpg'}
 
     inputnum, category, baseunit, targetunit, result = st.columns(5)
     with inputnum:
