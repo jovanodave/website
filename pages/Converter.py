@@ -81,11 +81,11 @@ with targetunit:
 with result:
     st.write("Result")
 
-      base_factor = conversion_factor[input_category][base_unit]
-      target_factor = conversion_factor[input_category][target_unit]
+    base_factor = conversion_factor[input_category][base_unit]
+    target_factor = conversion_factor[input_category][target_unit]
 
-      st.write(base_unit, base_factor)
-      st.write(target_unit, target_factor)
+    st.write(base_unit, base_factor)
+    st.write(target_unit, target_factor)
 
       result = (input_value / base_factor) * target_factor
       st.write(f"{input_value} {base_unit} = {result:.2f} {target_unit}")
