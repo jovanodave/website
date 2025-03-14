@@ -59,7 +59,7 @@ picture_link = {'bakso':'./images/bakso.jpg',
                 'es_jeruk':'./images/es_jeruk.jpg',
                 'pizza_large':'./images/large_pizzza.jpg',
                 'ramen':'./images/ramen.jpg'}
-                'lobster':'./images/lobster.jpg',
+                 'lobster':'./images/lobster.jpg',
                 'king_crab':'./images/king_crab.jpg'}
 
     inputnum, category, baseunit, targetunit, result = st.columns(5)
