@@ -77,7 +77,7 @@ with baseunit:
       
 with targetunit:
     target_unit = st.radio("Target Unit",options = conversion_factor[input_category].keys())
-    st.image(picture_link[base_unit])
+    st.image(picture_link[target_unit])
       
 with result:
     st.write("Result")
