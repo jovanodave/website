@@ -69,7 +69,7 @@ with st.container(border=True):
         st.write(target_unit, target_factor)
 
         result = (input_value / base_factor) * target_factor
-        st.write(f"{input_value}{base_unit}={result:.2f}{target_unit}")
+        st.write(f"{input_value} {base_unit} = {result:.2f} {target_unit}")
 
 with st.container():
     st.latex(r"\text{result}  =  \frac{\text{input value}}{\text{base factor}} \times \text{target factor}")
