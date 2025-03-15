@@ -50,18 +50,18 @@ conversion_factor = {
 with st.container(border=True):
     st.write("")
   
-picture_link = {'bakso':'./images/bakso.jpg',
-                'nasi_goreng':'./images/nasi_goreng.jpg',
-                'mie_ayam':'./images/mie_ayam.jpg',
-                'es_cendol':'./images/es_cendol.jpeg',
-                'lemper':'./images/lemper.jpg',
-                'lumpia':'./images/lumpia.jpg',
-                'es_teh':'./images/es_teh.jpg',
-                'es_jeruk':'./images/es_jeruk.jpg',
-                'pizza_large':'./images/large_pizzza.jpg',
-                'ramen':'./images/ramen.jpg',
-                'lobster':'./images/lobster.jpg',
-                'king_crab':'./images/king_crab.jpg'}
+#picture_link = {'bakso':'./images/bakso.jpg',
+#                'nasi_goreng':'./images/nasi_goreng.jpg',
+#                'mie_ayam':'./images/mie_ayam.jpg',
+#                'es_cendol':'./images/es_cendol.jpeg',
+#                'lemper':'./images/lemper.jpg',
+#                'lumpia':'./images/lumpia.jpg',
+#                'es_teh':'./images/es_teh.jpg',
+#                'es_jeruk':'./images/es_jeruk.jpg',
+#                'pizza_large':'./images/large_pizzza.jpg',
+#                'ramen':'./images/ramen.jpg',
+#                'lobster':'./images/lobster.jpg',
+#                'king_crab':'./images/king_crab.jpg'}
 
 inputnum, category, baseunit, targetunit, result = st.columns(5)
 
@@ -73,11 +73,11 @@ with category:
       
 with baseunit:
     base_unit = st.radio("Base Unit",options = conversion_factor[input_category].keys())
-    st.image(picture_link[base_unit])
+#    st.image(picture_link[base_unit])
       
 with targetunit:
     target_unit = st.radio("Target Unit",options = conversion_factor[input_category].keys())
-    st.image(picture_link[target_unit])
+#    st.image(picture_link[target_unit])
       
 with result:
     st.write("Result")
